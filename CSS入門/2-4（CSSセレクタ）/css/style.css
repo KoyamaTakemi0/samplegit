@@ -1,0 +1,21 @@
+html {
+  font-size: 24px;
+}
+
+body {
+  border: solid;
+  font-size: initial;
+  padding-top: 20px;
+}
+
+.main{
+  border: 1px solid;
+  margin: auto;
+  padding: 10px 20px 20px;
+  width: 760px;
+}
+
+/*特殊なセレクタ*/
+h2 ~ p{
+  color: red;
+}
