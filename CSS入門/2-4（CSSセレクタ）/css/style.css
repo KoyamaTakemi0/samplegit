@@ -19,3 +19,10 @@ body {
 h2 ~ p{
   color: red;
 }
+
+/*属性クラスタ*/
+[href="#"]{
+  background-color: crimson;
+  color: white;
+  padding: 5px;
+}
