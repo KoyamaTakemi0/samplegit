@@ -1,28 +1,81 @@
-html {
+/*html {
   font-size: 24px;
 }
+*/
 
 body {
-  border: solid;
-  font-size: initial;
-  padding-top: 20px;
+  /*border: solid;*/
+  /*font-size: initial;*/
+  padding: 1% 25%;
+  font-family: sans-serif;
 }
-
+/*
 .main{
   border: 1px solid;
   margin: auto;
   padding: 10px 20px 20px;
   width: 760px;
 }
-
+*/
 /*特殊なセレクタ*/
+/*
 h2 ~ p{
   color: red;
 }
-
-/*属性クラスタ*/
+*/
+/*属性クラスタ
 [href="#"]{
-  background-color: crimson;
+  background-color: green;
   color: white;
   padding: 5px;
+}
+*/
+
+/*擬似要素を使うと…*/
+/*
+a:link{
+  color: crimson;
+}
+
+a:visited{
+  color: green;
+}
+
+a:hover{
+  text-decoration: none;
+  background-color: lightgray;
+}
+
+:focus{
+  background-color: yellow;
+}
+*/
+
+/*構造的な擬似要素について*/
+ul{
+  margin: 25px auto 0;
+  padding: 12px;
+  border: 2px dotted grey;
+  list-style-position: inside;
+  font-size: 1.5em;
+}
+li{
+  margin: 0;
+  padding: 15px;
+  border-bottom: 2px solid #224a6b;
+}
+
+/*擬似要素を使うと…
+li:last-child{
+  background-color: steelblue;
+  border-bottom: none;
+}
+*/
+
+/*
+html要素は兄弟要素がないのでonly-childはhtml要素に対しても適用される。
+body要素は兄弟要素にhead要素があるので対象外。
+*/
+b:only-child{
+  background-color: steelblue;
 }
