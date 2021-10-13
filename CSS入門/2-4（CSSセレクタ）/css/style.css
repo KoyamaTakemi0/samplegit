@@ -76,6 +76,6 @@ li:last-child{
 html要素は兄弟要素がないのでonly-childはhtml要素に対しても適用される。
 body要素は兄弟要素にhead要素があるので対象外。
 */
-b:only-child{
+:only-child{
   background-color: steelblue;
 }
