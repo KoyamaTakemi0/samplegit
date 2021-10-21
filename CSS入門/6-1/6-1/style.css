@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body{
+  font: 1.1em/1.3 sans-serif;
+  padding: 0 10%;
+  margin: 0;
+  background-color: #ddd;
+}
+
+img{
+  float: left;
+}
+
+p{
+  float: right;
+}
+
+.clear{
+  clear: both;
+}
+
+a{
+  display: inline;
+  margin-bottom: 60px;
+}
+
+div{
+  padding: 10px 20px;
+  background-color: #fff;
+  width: 600px;
+  margin: 20px auto;
+}
