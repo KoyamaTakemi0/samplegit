@@ -1,0 +1,30 @@
+@charset "UTF-8";
+body{
+  font: 1.1em/1.3 sans-serif;
+  padding: 0 10%;
+  margin: 0;
+}
+
+nav{
+  margin: 1.5em 0;
+  /*
+  display: block;
+  visibility: visible;
+  */
+}
+
+a{
+  display: inline;
+  margin-bottom: 60px;
+}
+
+div{
+  padding: 10px 20px;
+  background-color: #eee;
+  border: 10px solid #ddd;
+  max-width: 400px;
+  max-height: 300px;
+  overflow: scroll;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
