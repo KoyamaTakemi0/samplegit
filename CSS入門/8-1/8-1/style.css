@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body{
+  /*font: 1.1em/1.3 sans-serif;*/
+  /*width: 80%;*/
+  /*height: 500px;*/
+  padding: 8% 25%;
+  margin: 0;
+  /*background-size: contain;*/
+  }
+/*
+div{
+  
+}
+*/
+p{
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-align: justify;
+/*装飾の練習*/
+border-bottom: solid 20px tomato;
+border-top: inset 10px blue;
+border-right: inset 10px blue;
+}
