@@ -1,0 +1,37 @@
+@charset "utf-8";
+body {
+ margin: 0;
+}
+.flex {
+ display: flex;
+}
+
+.clearfix::after{
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.red_box {
+ width: 400px;
+ height: 100px;
+ background: #f00;
+}
+.green_box {
+ width: 150px;
+ height: 250px;
+ background: #00ff1e;
+ float: left;
+}
+.blue_box {
+ width: 250px;
+ height: 250px;
+ background: #30f;
+ float: left;
+}
+
+.yellow_box {
+  width: 400px;
+  height: 100px;
+  background: #ffe600;
+ }
