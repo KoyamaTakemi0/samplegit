@@ -42,6 +42,20 @@
 // 1.プロパティとメソッドの違い
 // オブジェクトのkeyとvalueのvalueが関数になっているのがメソッド。
 // プロパティはオブジェクトの「状態」を示し、メソッドはオブジェクトの動作を示す。
+const greenApple = {
+  name:"あおりんご",
+  color:"黄緑",
+  size:"小さい",
+  taste:function(){
+    console.log("甘酸っぱいです。");
+  },
+  smell:function(){
+    console.log("さわやかな香りがします。");
+  },
+  comment:function(){
+    console.log("10年に1度の良作です!");
+  }
+};
 
 
 // 2.下記関数を実行し、結果をコンソールに表示
@@ -52,14 +66,20 @@ function fruit(name, price) {
 console.log("課題2　" + fruit("オレンジ", 50)); 
 
 // 3.下記関数を経由して2つの関数を実行
-function addTax(price, func) {
+function addTax(price, name, func) {
   // priceは値段
   // funcは実⾏する関数名
   // 税込み価格を計算して四捨五⼊して整数にしている(スコープ内でしか参照できません。)
   const taxPrice = Math.round(price * 1.10);
+  func(name, taxPrice);
  };
- // トマトの税込み価格をコンソールに表⽰させる処理
 
+ const Price = function Price(name, price){
+  console.log(name + "の税込み値段は" + price + "円です。");
+};
+ // トマトの税込み価格をコンソールに表⽰させる処理
+addTax(100, "トマト", Price);
 
  // ⽟ねぎの税込み価格をコンソールに表⽰させる処理
- 
+ addTax(200, "玉ねぎ", Price);
+
