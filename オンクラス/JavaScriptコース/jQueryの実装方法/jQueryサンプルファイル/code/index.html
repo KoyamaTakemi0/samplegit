@@ -6,6 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Document </title>
+  <!--↓↓↓ スライダープラグイン（slick） ↓↓↓-->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  />
+  <!--↓↓↓ スライダープラグイン（slick） ↓↓↓-->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+  />
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -38,7 +50,13 @@
     </header>
     <main>
       <div class="main">
-        メインコンテンツエリア
+        <!-- メインコンテンツエリア -->
+        <div class="slider">
+          <div class="slider-img"><img src="images/img-cafe-latte.jpg" alt="" /></div>
+          <div class="slider-img"><img src="images/img-cake.jpg" alt="" /></div>
+          <div class="slider-img"><img src="images/img-coffee.jpg" alt="" /></div>
+          <div class="slider-img"><img src="images/img-tea.jpg" alt="" /></div>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -46,9 +64,18 @@
         フッターエリア
       </div>
     </footer>
+    <div id="PageTop">
+      <a href="#">PAGE　TOP</a>
+    </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="main.js"></script>
+    <!--↓↓↓ スライダープラグイン（slick） ↓↓↓-->
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    >
+</script>
 </body>
 
 </html>
