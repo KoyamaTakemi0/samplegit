@@ -1,0 +1,48 @@
+.main {
+  font-size: 20px;
+  &-content {
+  font-size: 10px;
+  }
+
+ width: 500px;
+ height: 500px;
+ background: #333;
+ }
+ 
+ .inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+ }
+
+ @mixin btn($color) {
+  border: 0;
+  border-radius: 0;
+  display: block;
+  padding: 20px 30px;
+  margin: 10px auto;
+  color: #fff;
+  border-radius: 6px;
+  // cursor: pointer;
+  background-color: $color;
+  text-decoration: none;
+  text-align: center;
+ }
+
+ $map: (
+  "line": #00B900,
+  "instagram": #CF2E92,
+  "facebook": #71d0f2,
+  "twitter": #1DA1F2,
+  );
+
+ $snsClass:"line","instagram","facebook","twitter";
+ 
+ @each $key, $value in $map {
+  .#{$key}-bg-color {
+  background: $value;
+  @include btn($value);
+  }
+ }
+
