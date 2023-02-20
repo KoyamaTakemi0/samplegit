@@ -16,6 +16,28 @@
   padding: 0 10px;
  }
 
+//  課題1
+$colorNum: 1;
+@mixin boxColor($color){
+  @if $color == 0 {
+    background-color: red;
+    }
+   @else if $color == 1 {
+    background-color: blue;
+    }
+   @else {
+    background-color: green;
+    }   
+}
+
+.theBox {
+  display: block;
+  padding: 20px 30px;
+  margin: 10px auto;
+  @include boxColor($colorNum);
+}
+
+// 課題2
  @mixin btn($color) {
   border: 0;
   border-radius: 0;
