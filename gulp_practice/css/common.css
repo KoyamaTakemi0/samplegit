@@ -15,6 +15,13 @@
   padding: 0 10px;
 }
 
+.theBox {
+  display: block;
+  padding: 20px 30px;
+  margin: 10px auto;
+  background-color: blue;
+}
+
 .line-bg-color {
   background: #00B900;
   border: 0;
