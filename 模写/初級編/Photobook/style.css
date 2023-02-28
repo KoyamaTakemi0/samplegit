@@ -1,0 +1,82 @@
+body{
+  background-color: #f4f9ff;
+  color: #000;
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#header{
+  margin-top: 50px;
+  padding: 0 10px;
+}
+
+.site-title{
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.site-title img{
+  max-width: 100%;
+}
+
+.mainvisual{
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+
+.mainvisual img{
+  max-width: 100%;
+  object-fit: cover;
+}
+
+#index{
+  max-width: 100%;
+  margin-bottom: 50px;
+  background-color: #fff;
+}
+
+.inner{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.section-title{
+  margin-bottom: 10px;
+}
+
+.index-list{
+  margin-left: 20px;
+}
+
+.index-list li{
+  margin-bottom: 20px;
+}
+
+#detail{
+  margin-bottom: 100px;
+}
+
+.detail-content{
+  display: flex;
+  max-width: 100%;
+  align-items: flex-start;
+}
+
+.detail-content img{
+  height: 250px;
+  width: 250px;
+}
+
+.text{
+  margin-left: 50px;
+}
+
+/* 
+・DEEAILのtext部分実装
+・footerの実装
+・レスポンシブ対応の実装
+*/
